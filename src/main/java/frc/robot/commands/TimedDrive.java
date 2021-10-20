@@ -26,7 +26,7 @@ public class TimedDrive extends CommandBase {
   @Override
   public void initialize() {
     timer.start();
-    if (time >= timer.get() ){
+    if (timer.get() <= 10 ){
       _drivetrain.tankDrive(0.8, 0.8);
 
     }
